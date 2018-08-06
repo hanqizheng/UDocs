@@ -1,0 +1,45 @@
+# Sphinx version: 1.7.6
+# Python version: 2.7.15rc1 (CPython)
+# Docutils version: 0.14 
+# Jinja2 version: 2.10
+# Last messages:
+#   Running Sphinx v1.7.6
+#   loading translations [zh_CN]...
+#   done
+#   making output directory...
+#   loading pickled environment...
+#   not yet created
+#   loading intersphinx inventory from https://docs.python.org/3/objects.inv...
+#   building [mo]: targets for 0 po files that are out of date
+#   building [html]: targets for 24 source files that are out of date
+# Loaded extensions:
+#   sphinx.ext.mathjax (1.7.6) from /usr/local/lib/python2.7/dist-packages/sphinx/ext/mathjax.pyc
+#   sphinx.ext.coverage (1.7.6) from /usr/local/lib/python2.7/dist-packages/sphinx/ext/coverage.pyc
+#   sphinx.ext.viewcode (1.7.6) from /usr/local/lib/python2.7/dist-packages/sphinx/ext/viewcode.pyc
+#   sphinx.ext.todo (1.7.6) from /usr/local/lib/python2.7/dist-packages/sphinx/ext/todo.pyc
+#   sphinx.ext.autodoc (1.7.6) from /usr/local/lib/python2.7/dist-packages/sphinx/ext/autodoc/__init__.pyc
+#   sphinx.ext.intersphinx (1.7.6) from /usr/local/lib/python2.7/dist-packages/sphinx/ext/intersphinx.pyc
+#   sphinx.ext.doctest (1.7.6) from /usr/local/lib/python2.7/dist-packages/sphinx/ext/doctest.pyc
+#   alabaster (0.7.11) from /usr/local/lib/python2.7/dist-packages/alabaster/__init__.pyc
+#   sphinx.ext.ifconfig (1.7.6) from /usr/local/lib/python2.7/dist-packages/sphinx/ext/ifconfig.pyc
+#   sphinx_ustack_theme (unknown version) from /usr/local/lib/python2.7/dist-packages/sphinx_ustack_theme/__init__.pyc
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/sphinx/cmdline.py", line 304, in main
+    app.build(args.force_all, filenames)
+  File "/usr/local/lib/python2.7/dist-packages/sphinx/application.py", line 331, in build
+    self.builder.build_update()
+  File "/usr/local/lib/python2.7/dist-packages/sphinx/builders/__init__.py", line 342, in build_update
+    'out of date' % len(to_build))
+  File "/usr/local/lib/python2.7/dist-packages/sphinx/builders/__init__.py", line 355, in build
+    updated_docnames = set(self.env.update(self.config, self.srcdir, self.doctreedir))
+  File "/usr/local/lib/python2.7/dist-packages/sphinx/environment/__init__.py", line 522, in update
+    self.find_files(config, self.app.builder)
+  File "/usr/local/lib/python2.7/dist-packages/sphinx/environment/__init__.py", line 418, in find_files
+    exclude_matchers=matchers):
+  File "/usr/local/lib/python2.7/dist-packages/sphinx/util/__init__.py", line 113, in get_matching_docs
+    for filename in get_matching_files(dirname, exclude_matchers):
+  File "/usr/local/lib/python2.7/dist-packages/sphinx/util/__init__.py", line 88, in get_matching_files
+    for root, dirs, files in walk(dirname, followlinks=True):
+  File "/usr/local/lib/python2.7/dist-packages/sphinx/util/osutil.py", line 102, in walk
+    names = os.listdir(top)
+OSError: [Errno 2] No such file or directory: '/home/hqz/ustackDocuments/uDocs/Docs/infra/source'

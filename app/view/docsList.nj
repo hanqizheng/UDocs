@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>docs list</title>
+  </head>
+  {# <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    const links = document.getElementsByClassName('a-link');
+    const len = links.length;
+    for(let i = 0; i < len; i++) {
+      links[i].addEventListener('click', function(e) {
+        e.preventDefault();
+        $.ajax('post', );
+      });
+    }
+  </script> #}
+  <body>
+    <div>Docs List</div>
+    <div>-------------------------------------
+      <p>
+        {% for address in docsList %}
+        <div><a href={{ address.urlParameter }}/index.html class="a-link">{{ address.docName }}</a></div>
+        {% endfor %}
+      </p>
+      <div>
+      </div>
+    </div>
+  </body>
+</html>

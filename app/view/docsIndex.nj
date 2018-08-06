@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>docs index</title>
+  </head>
+  <body>
+    <div>
+        <form method='post'>
+        <input type='text' id='text'>
+        <input type='submit',id='submit'>
+    </form>
+    </div>
+  </body>
+</html>

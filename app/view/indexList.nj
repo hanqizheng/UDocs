@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>docs list</title>
+  </head>
+  <body>
+    <div>Docs List</div>
+    <div>-------------------------------------
+      <p>
+        {% for address in addrList %}
+        <div><a href={{ address.address}}>{{ address.address}}</a></div>
+        {% endfor %}
+      </p>
+      <div>
+      </div>
+    </div>
+  </body>
+</html>
