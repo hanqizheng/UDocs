@@ -1,6 +1,7 @@
 # uDocs
 
-
+## Introduction
+It is a Doc product that can clone docs from company git repository and build Sphinx docs to html.
 
 ## QuickStart
 

@@ -1,6 +1,7 @@
 # uDocs
 
-
+## 介绍
+主要可以从公司的git仓库将文档clone下来，然后把Sphinx格式的文档build成html供他人查看。
 
 ## 快速入门
 
